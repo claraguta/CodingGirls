@@ -20,11 +20,11 @@ namespace exercicios_3
 
         static void Exercicio_1()
         {
-            /*  Leia um valor de ponto flutuante com duas casas decimais. Este valor representa um valor monetário. 
-             *  A seguir, calcule o menor número de notas e moedas possíveis no qual o valor pode ser decomposto. 
-             *  As notas consideradas são de 100, 50, 20, 10, 5, 2.
+            /*  Leia um valor de ponto flutuante com duas casas decimais. Este valor representa um valor monetï¿½rio. 
+             *  A seguir, calcule o menor nï¿½mero de notas e moedas possï¿½veis no qual o valor pode ser decomposto. 
+             *  As notas consideradas sï¿½o de 100, 50, 20, 10, 5, 2.
              *  Entrada: 576.73
-             *  Exemplo de Saída: NOTAS: 5 nota(s) de R$ 100.00 1 nota(s) de R$ 50.00 1 nota(s) de R$ 20.00 0 nota(s)
+             *  Exemplo de Saï¿½da: NOTAS: 5 nota(s) de R$ 100.00 1 nota(s) de R$ 50.00 1 nota(s) de R$ 20.00 0 nota(s)
              *  de R$ 10.00 1 nota(s) de R$ 5.00 0 nota(s) de R$ 2.008
              *  */
 
@@ -43,21 +43,21 @@ namespace exercicios_3
             {
                 hundred = bankNote / 100;
                 leftovers = bankNote % 100;
-                Console.Write($" Serão:\n {(int)hundred} nota(s) de 100.00");
+                Console.Write($" Serï¿½o:\n {(int)hundred} nota(s) de 100.00");
                 fifty = leftovers / 50;
                 leftovers = leftovers % 50;
-                Console.Write($" Serão {(int)fifty} nota(s) de 50.00");
+                Console.Write($" Serï¿½o {(int)fifty} nota(s) de 50.00");
                 twenty = leftovers / 20;
                 leftovers = leftovers % 20;
-                Console.Write($"Serão {(int)twenty} nota(s) de 20.00");
+                Console.Write($"Serï¿½o {(int)twenty} nota(s) de 20.00");
                 ten = leftovers / 10;
                 leftovers = leftovers % 10;
-                Console.Write($"Serão {(int)ten} nota(s) de 10.00");
+                Console.Write($"Serï¿½o {(int)ten} nota(s) de 10.00");
                 five = leftovers / 5;
                 leftovers = leftovers % 5;
-                Console.Write($"Serão {(int)five} nota(s) de 5.00");
+                Console.Write($"Serï¿½o {(int)five} nota(s) de 5.00");
                 two = leftovers / 2;
-                Console.Write($"E serão {(int)two} nota(s) de 2.00 .");
+                Console.Write($"E serï¿½o {(int)two} nota(s) de 2.00 .");
 
                 Console.ReadLine();
 
@@ -70,23 +70,23 @@ namespace exercicios_3
         static void Exercicio_2()
         {
             /*
-             Faça um programa que leia três valores e apresente o maior dos três valores lidos seguido da 
-            mensagem “x é o maior”. 
+             Faï¿½a um programa que leia trï¿½s valores e apresente o maior dos trï¿½s valores lidos seguido da 
+            mensagem ï¿½x ï¿½ o maiorï¿½. 
             Exemplo de Entrada 7 14 106
-            Exemplo de Saída 106 é o maior
+            Exemplo de Saï¿½da 106 ï¿½ o maior
             */
-           Console.WriteLine("Insira três números ");
+           Console.WriteLine("Insira trï¿½s nï¿½meros ");
 
             int n1 = int.Parse(Console.ReadLine());
             int n2 = int.Parse(Console.ReadLine());
             int n3 = int.Parse(Console.ReadLine());
 
             if (n1 > n2 && n1 > n3)
-                Console.WriteLine($" O número {n1} é  maior");
+                Console.WriteLine($" O nï¿½mero {n1} ï¿½  maior");
             else if (n2 > n3)
-                Console.WriteLine($" O número {n2} é maior");
+                Console.WriteLine($" O nï¿½mero {n2} ï¿½ maior");
             else
-                Console.WriteLine($" O número {n3} é  maior");
+                Console.WriteLine($" O nï¿½mero {n3} ï¿½  maior");
 
             Console.ReadLine();
         }
@@ -94,11 +94,11 @@ namespace exercicios_3
         static void Exercicio_3()
         {
             /*
-             Leia 3 valores que são as três notas de um aluno. A seguir, calcule a média do aluno. 
-            Considere que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal. Imprima se 
-            o aluno foi aprovado ou reprovado considerando a média 7.
+             Leia 3 valores que sï¿½o as trï¿½s notas de um aluno. A seguir, calcule a mï¿½dia do aluno. 
+            Considere que cada nota pode ir de 0 atï¿½ 10.0, sempre com uma casa decimal. Imprima se 
+            o aluno foi aprovado ou reprovado considerando a mï¿½dia 7.
             Exemplo de Entrada 7 8 3
-            Exemplo de Saída O aluno tirou 6 e foi reprovado.*/
+            Exemplo de Saï¿½da O aluno tirou 6 e foi reprovado.*/
 
            Console.WriteLine("Insira as notas do aluno:");
 
@@ -110,14 +110,14 @@ namespace exercicios_3
 
             if (grade1 > 10 || grade2 > 10 || grade3 > 10 || grade1 < 0 || grade2 < 0 || grade3 < 0)
             {
-                Console.WriteLine("Nota inválida!");
+                Console.WriteLine("Nota invï¿½lida!");
             }
             else if (mean >= 7)
             {
-                Console.WriteLine($"APROVADO com média {mean.ToString("F1")}");
+                Console.WriteLine($"APROVADO com mï¿½dia {mean.ToString("F1")}");
             }
             else
-                Console.WriteLine($"REPROVADO por ter média {mean.ToString("F1")}");
+                Console.WriteLine($"REPROVADO por ter mï¿½dia {mean.ToString("F1")}");
 
 
             Console.ReadLine();
@@ -126,15 +126,15 @@ namespace exercicios_3
         static void Exercicio_4()
         {
             /*
-             Leia 3 valores que são as três notas de um aluno. A seguir, calcule a média do aluno.
+             Leia 3 valores que sï¿½o as trï¿½s notas de um aluno. A seguir, calcule a mï¿½dia do aluno.
              Se a nota for menor que 6.0, deve exibir a nota F.
-             Se a nota for de 6.0 até 7.0, deve exibir a nota D.
+             Se a nota for de 6.0 atï¿½ 7.0, deve exibir a nota D.
              Se a nota for entre 7.0 e 8.0, deve exibir a nota C.
              Se a nota for entre 8.0 e 9.0, deve exibir a nota B.
              Se a nota fot entre 9.0 e 10.0, deve exibir um belo de um A.
-             Não esqueça de adicionar uma mensagem após a nota, pode ser um simples parabéns para aprovação ou algo mais complexo.
+             Nï¿½o esqueï¿½a de adicionar uma mensagem apï¿½s a nota, pode ser um simples parabï¿½ns para aprovaï¿½ï¿½o ou algo mais complexo.
              Exemplo de Entrada 10 8 9
-             Exemplo de Saída O aluno tirou A. Parabéns!*/
+             Exemplo de Saï¿½da O aluno tirou A. Parabï¿½ns!*/
 
                         Console.Write("Digite o nome do aluno: ");
 
@@ -150,31 +150,31 @@ namespace exercicios_3
 
             if (grade01 > 10 || grade02 > 10 || grade03 > 10 || grade01 < 0 || grade02 < 0 || grade03 < 0)
             {
-                Console.WriteLine(" Nota inválida!");
+                Console.WriteLine(" Nota invï¿½lida!");
             }
             else if (mean < 6)
             {
-                Console.WriteLine($" \n {name} sua nota final é F.\n\n Infelizmente você foi reprovade. ");
+                Console.WriteLine($" \n {name} sua nota final ï¿½ F.\n\n Infelizmente vocï¿½ foi reprovade. ");
             }
             else if (mean <= 7)
             {
-                Console.WriteLine($" \n {name} sua nota final é D.\n\n Sua nota foi suficiente para ser aprovade, mas é necessário se dedicar mais. ");
+                Console.WriteLine($" \n {name} sua nota final ï¿½ D.\n\n Sua nota foi suficiente para ser aprovade, mas ï¿½ necessï¿½rio se dedicar mais. ");
             }
             else if (mean <= 8)
             {
-                Console.WriteLine($" \n {name} sua nota final é C.\n\n Você foi aprovade. Sua nota foi boa, mas é sempre possível melhorar ainda mais. ");
+                Console.WriteLine($" \n {name} sua nota final ï¿½ C.\n\n Vocï¿½ foi aprovade. Sua nota foi boa, mas ï¿½ sempre possï¿½vel melhorar ainda mais. ");
             }
             else if (mean <= 9)
             {
-                Console.WriteLine($" \n {name} você foi aprovade. Parabéns pelo esforço. ");
+                Console.WriteLine($" \n {name} vocï¿½ foi aprovade. Parabï¿½ns pelo esforï¿½o. ");
             }
             else if (mean < 10)
             {
-                Console.WriteLine($" \n {name} você foi aprovade, bem perto do gabarito! Parabéns");
+                Console.WriteLine($" \n {name} vocï¿½ foi aprovade, bem perto do gabarito! Parabï¿½ns");
             }
             else
 
-                Console.WriteLine($" \n {name} você foi aprovado com o gabarito, parabéns" +
+                Console.WriteLine($" \n {name} vocï¿½ foi aprovado com o gabarito, parabï¿½ns" +
                     $".");
 
 
@@ -184,61 +184,61 @@ namespace exercicios_3
         static void Exercicio_5()
         {
             /*
-             A Blue resolveu dar um aumento de salários a seus funcionários de acordo com os dados abaixo:
-            Salário de 0 até 400.00 ganha 15% Salário de 400.01 até 800.00 ganha 12% Salário de 800.01 até 
-            1200.00 ganha 10% Salário de 1200.01 até 2000.00 ganha 7% Acima de 2000.00 ganha 4%
-            Leia o salário do funcionário e calcule e mostre o novo salário, bem como o valor de reajuste 
-            ganho e o índice reajustado, em percentual.
+             A Blue resolveu dar um aumento de salï¿½rios a seus funcionï¿½rios de acordo com os dados abaixo:
+            Salï¿½rio de 0 atï¿½ 400.00 ganha 15% Salï¿½rio de 400.01 atï¿½ 800.00 ganha 12% Salï¿½rio de 800.01 atï¿½ 
+            1200.00 ganha 10% Salï¿½rio de 1200.01 atï¿½ 2000.00 ganha 7% Acima de 2000.00 ganha 4%
+            Leia o salï¿½rio do funcionï¿½rio e calcule e mostre o novo salï¿½rio, bem como o valor de reajuste 
+            ganho e o ï¿½ndice reajustado, em percentual.
             Exemplo de Entrada 400.00
-            Exemplo de Saída Novo salario: 460.00 Reajuste ganho: 60.00 Em percentual: 15 %*/
+            Exemplo de Saï¿½da Novo salario: 460.00 Reajuste ganho: 60.00 Em percentual: 15 %*/
 
             
-            Console.Write("Informe o nome do funcionário: ");
+            Console.Write("Informe o nome do funcionï¿½rio: ");
             string name = Console.ReadLine();
 
-            Console.Write($"Informe o salário {name} : ");
+            Console.Write($"Informe o salï¿½rio {name} : ");
             float wage = float.Parse(Console.ReadLine());
 
             float difference;
 
             if( wage < 0)
             {
-                Console.WriteLine("Salário não é passível de reajuste.");
+                Console.WriteLine("Salï¿½rio nï¿½o ï¿½ passï¿½vel de reajuste.");
             }
             else if (wage >= 0 && wage <= 400)
             {
                 difference = wage * 0.15f;
                 wage = wage + difference;               
 
-                Console.WriteLine($" O funcionário(a) {name} terá o novo salário de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
+                Console.WriteLine($" O funcionï¿½rio(a) {name} terï¿½ o novo salï¿½rio de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
             }
             else if ( wage >= 400.01 && wage <= 800)
             {
                 difference = wage * 0.12f;
                 wage = wage + difference;
 
-                Console.WriteLine($" O funcionário(a) {name} terá o novo salário de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
+                Console.WriteLine($" O funcionï¿½rio(a) {name} terï¿½ o novo salï¿½rio de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
             }
             else if (wage >= 800.01 && wage <= 1200.00)
             {
                 difference = wage * 0.10f;
                 wage = wage + difference;
 
-                Console.WriteLine($" O funcionário(a) {name} terá o novo salário de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
+                Console.WriteLine($" O funcionï¿½rio(a) {name} terï¿½ o novo salï¿½rio de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
             }
             else if (wage >= 12000.01 && wage <= 2000)
             {
                 difference = wage * 0.7f;
                 wage = wage + difference;
 
-                Console.WriteLine($" O funcionário(a) {name} terá o novo salário de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
+                Console.WriteLine($" O funcionï¿½rio(a) {name} terï¿½ o novo salï¿½rio de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
             }
             else
             {
                 difference = wage * 0.4f;
                 wage = wage + difference;
 
-                Console.WriteLine($" O funcionário(a) {name} terá o novo salário de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
+                Console.WriteLine($" O funcionï¿½rio(a) {name} terï¿½ o novo salï¿½rio de {wage.ToString("F2")}, com reajuste de {difference.ToString("F2")}. Significando portanto um percentual de 15%");
             }
             Console.ReadLine();
                 
